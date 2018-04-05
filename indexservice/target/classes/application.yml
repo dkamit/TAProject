@@ -1,0 +1,16 @@
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8302/eureka/
+  instance:
+    hostname: localhost
+    
+spring:
+  application:
+    name: indexservice
+server:
+  port: 8300
+indexservice:
+  csv: tmdb_5000_credits.csv
